@@ -10,11 +10,11 @@ makeCacheMatrix <- function(y = matrix()) {
     inverse_y <<- NULL
   }
   get <- function(y) 
-  setinverse<- function(inverse) inverse_y <<-inverse
+    setinverse<- function(inverse) inverse_y <<-inverse
   getinverse <- function(inverse_y)
-  list(set = set, get = get,
-       setinverse = setinverse,
-       getinverse = getinverse)
+    list(set = set, get = get,
+         setinverse = setinverse,
+         getinverse = getinverse)
 }
 
 ## The function cacheSolve returns the inverse of a matrix A created with
